@@ -1,0 +1,53 @@
+{
+    "os": "macOS-14.0-arm64-arm-64bit",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-03-22T13:52:45.492751",
+    "startedAt": "2024-03-22T13:52:45.142733",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--run_dir",
+        "./runs",
+        "--group_name",
+        "nmda_experiments",
+        "--alpha",
+        "0.1",
+        "--num_envs",
+        "32",
+        "--log_to_wandb"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "Rhyss-MacBook-Pro.local",
+    "username": "rhysswitzer",
+    "executable": "/opt/anaconda3/envs/nmda/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 12.908981323242188
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

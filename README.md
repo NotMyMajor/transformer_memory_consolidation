@@ -1,6 +1,9 @@
+## Introduction
+
+This is a fork of "transformer_memory_consolidation" from the paper "Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity". This is for a student project at the University of Texas at Dallas. Runs were performed on a 2021 MacBook Pro with Apple M1 Pro and on Windows systems with RTX 3080 GPUs.
 
 ---
-## Introduction
+## (Original Introduction)
 
 This code is for the runs in our work, "Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity". In our work, all runs are performed on a single
 NVIDIA TITAN V GPU.

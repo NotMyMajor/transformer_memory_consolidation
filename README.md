@@ -1,6 +1,9 @@
+## Introduction
+
+This is a fork of "transformer_memory_consolidation" from the paper "Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity". This is for a student project at the University of Texas at Dallas. Runs were performed on a 2021 MacBook Pro with Apple M1 Pro and on Windows systems with RTX 3080 GPUs.
 
 ---
-## Introduction
+## (Original Introduction)
 
 This code is for the runs in our work, "Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity". In our work, all runs are performed on a single
 NVIDIA TITAN V GPU.
@@ -64,3 +67,27 @@ After installing PyTorch with CUDA support, ensure that the GPU is detected from
 &nbsp;
 - Get GPU name
 `torch.cuda.get_device_name(0)`  
+
+## Exporting WandB Run History
+To export the WandB run history after a run is complete:
+* Open the run on WandB
+* Go to Overview
+* Click the "..." in the top right
+* Select "Export Data". Copy the line "run = api.run("YOUR_RUN_NAME_HERE")"
+* Open up a terminal and follow the steps below, substituting the line you copied where it says "run = api.run("YOUR_RUN_NAME_HERE")".
+* Change "/Output/Path/Here/OutputName.xlsx" to the path and filename you want to save the spreadsheet.
+
+(The first time I tried this, pandas gave an error due to a missing dependency that didn't get installed. Just pip install that missing dependency and try again.)
+
+```bash
+pip install pandas
+python
+```
+```bash
+>>> import wandb
+>>> import pandas
+>>> api = wandb.Api()
+>>> run = api.run("YOUR_RUN_NAME_HERE")
+>>> history = run.history(pandas=True)
+>>> history.to_excel("/Output/Path/Here/OutputName.xlsx")
+```

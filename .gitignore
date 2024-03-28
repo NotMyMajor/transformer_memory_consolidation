@@ -2,3 +2,12 @@
 
 # VS Code settings
 /.vscode
+.DS_Store
+runs/.DS_Store
+runs/wandb/.DS_Store
+runs/wandb/MacSilicon_Run/.DS_Store
+runs/wandb/MacSilicon_Run/files/.DS_Store
+runs/wandb/MacSilicon_Run/files/media/.DS_Store
+runs/wandb/MacSilicon_Run/files/media/images/.DS_Store
+runs/wandb/MacSilicon_Run/files/media/images/train/.DS_Store
+runs/wandb/MacSilicon_Run/tmp/.DS_Store

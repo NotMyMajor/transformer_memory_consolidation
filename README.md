@@ -57,7 +57,7 @@ After installing PyTorch with CUDA support, ensure that the GPU is detected from
 `import torch`   
 &nbsp;
 - Check that CUDA is available
-`cudatorch.cuda.is_available()`  
+  `torch.cuda.is_available()`  
 &nbsp;
 - Check for GPUs
 `torch.cuda.device_count()`  

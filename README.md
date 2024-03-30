@@ -89,5 +89,5 @@ python
 >>> api = wandb.Api()
 >>> run = api.run("YOUR_RUN_NAME_HERE")
 >>> history = run.history(pandas=True)
->>> history.to_excel("/Output/Path/Here/OutputName.xlsx")
+>>> history.to_excel(r"/Output/Path/Here/OutputName.xlsx")
 ```

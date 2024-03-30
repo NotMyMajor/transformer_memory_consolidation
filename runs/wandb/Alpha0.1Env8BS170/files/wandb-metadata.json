@@ -1,0 +1,65 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-03-30T04:18:45.577943",
+    "startedAt": "2024-03-30T04:18:44.830734",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--run_dir",
+        "./runs",
+        "--group_name",
+        "nmda_experiments",
+        "--alpha",
+        "0.1",
+        "--num_envs",
+        "8",
+        "--log_to_wandb",
+        "--batch_size",
+        "170"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/NotMyMajor/transformer_memory_consolidation.git",
+        "commit": "8948f7466c19eb7b4035f9a0227f034de9d2d81e"
+    },
+    "email": "rhystsgm@gmail.com",
+    "root": "C:/Users/rhyst/Documents/GitHub/transformer_memory_consolidation",
+    "host": "RhysCustomBuild",
+    "username": "rhyst",
+    "executable": "C:\\Users\\rhyst\\anaconda3\\envs\\nmda\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3600.0,
+        "min": 0.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3600.0,
+            "min": 0.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 930.15234375,
+            "used": 517.9946708679199
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.747482299804688
+    }
+}

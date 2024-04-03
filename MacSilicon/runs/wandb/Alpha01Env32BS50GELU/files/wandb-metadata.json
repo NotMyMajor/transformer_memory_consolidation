@@ -1,0 +1,63 @@
+{
+    "os": "macOS-14.0-arm64-arm-64bit",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-04-03T00:20:54.083065",
+    "startedAt": "2024-04-03T00:20:53.774989",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--run_dir",
+        "./runs",
+        "--group_name",
+        "nmda_experiments",
+        "--alpha",
+        "0.1",
+        "--num_envs",
+        "32",
+        "--log_to_wandb",
+        "--batch_size",
+        "50",
+        "--ffn_act_ftn",
+        "gelu"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "MacSilicon/main.py",
+    "git": {
+        "remote": "https://github.com/NotMyMajor/transformer_memory_consolidation.git",
+        "commit": "a93a2c84ff1f1db4144a6a646c5ad1caf83f9a2a"
+    },
+    "email": "rhystsgm@gmail.com",
+    "root": "/Users/rhysswitzer/Documents/Python Projects/TransformerMemoryConsolidation/transformer_memory_consolidation",
+    "host": "Rhyss-MacBook-Pro.local",
+    "username": "rhysswitzer",
+    "executable": "/opt/anaconda3/envs/nmda/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.14486312866211
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

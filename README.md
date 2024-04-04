@@ -69,6 +69,28 @@ After installing PyTorch with CUDA support, ensure that the GPU is detected from
 `torch.cuda.get_device_name(0)`  
 
 ## Exporting WandB Run History
+There is now an export_excel.py script to make exporting the WandB run history easier.
+Keep in mind that this is a quick and dirty script made to make the process slightly easier. It has some basic input checking to try to make sure you can't mess it up too bad, but use with some caution.
+
+You may need to install tkinter if you don't have it already.
+```bash
+python -m pip install tkinter
+```
+
+To use the script:
+* Open the run on WandB
+* Go to Overview
+* Click the "..." in the top right
+* Select "Export Data". Copy the path from the line "run = api.run("/COPY/THIS/PATH")". Just the path without the ""
+* Open the terminal and navigate to the folder with the script 
+```bash
+python export_excel.py
+```
+Follow the instructions in the terminal to paste the WandB run name/path from the WandB website and choose a save path and filename for the output spreadsheet.
+
+If you still want to export the WandB run manually, the instructions are below.
+
+## Exporting WandB Run History Manually
 To export the WandB run history after a run is complete:
 * Open the run on WandB
 * Go to Overview

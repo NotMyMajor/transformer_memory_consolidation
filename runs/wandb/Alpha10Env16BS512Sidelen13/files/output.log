@@ -1,0 +1,176 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WM error: 0.009%, RM error 0.754%, loss: 0.0071:  80%|█████████████████▍    | 159/200 [100:33:53<25:55:54, 2276.94s/it]
+Traceback (most recent call last):
+  File "main.py", line 296, in <module>
+    experiment(config=vars(args))
+  File "main.py", line 199, in experiment
+    ret2 = rate_map(L, rw, model, config, device, True)
+  File "C:\Users\bryce\Desktop\transformer_memory_consolidation-main\misc.py", line 24, in rate_map
+    obs, act, pos = create_data(rw, config, 0, validation)
+  File "C:\Users\bryce\Desktop\transformer_memory_consolidation-main\misc.py", line 8, in create_data
+    g, x, a = rw.run(
+  File "C:\Users\bryce\Desktop\transformer_memory_consolidation-main\random_walk.py", line 44, in run
+    _rand = np.random.random((batch_size, seq_len, 1))
+  File "mtrand.pyx", line 445, in numpy.random.mtrand.RandomState.random
+  File "mtrand.pyx", line 436, in numpy.random.mtrand.RandomState.random_sample
+  File "_common.pyx", line 307, in numpy.random._common.double_fill
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 400. MiB for an array with shape (512, 102400, 1) and data type float64

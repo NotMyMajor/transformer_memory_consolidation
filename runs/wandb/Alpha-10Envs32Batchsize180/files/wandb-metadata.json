@@ -1,0 +1,59 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-04-03T21:20:53.309792",
+    "startedAt": "2024-04-03T21:20:52.345162",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--run_dir",
+        "./runs",
+        "--group_name",
+        "nmda_experiments",
+        "--alpha",
+        "-10",
+        "--num_envs",
+        "32",
+        "--log_to_wandb",
+        "--batch_size",
+        "180"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "DESKTOP-PPL7JFU",
+    "username": "bryce",
+    "executable": "C:\\Users\\bryce\\anaconda3\\envs\\nmda\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3701.0,
+        "min": 0.0,
+        "max": 3701.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3701.0,
+            "min": 0.0,
+            "max": 3701.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 935.8193321228027,
+            "used": 694.8474235534668
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10737418240
+        }
+    ],
+    "memory": {
+        "total": 15.926528930664062
+    }
+}
